@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Florence Bank - Move Money</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        position: relative;
+      }
+
+      header {
+        background-color: #007bff;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      nav {
+        background-color: #007bff;
+        text-align: center;
+        padding: 10px 20px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      .sub-nav {
+        background-color: #535556;
+        text-align: center;
+        padding: 10px 20px;
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 10px;
+      }
+
+      .sub-nav a {
+        text-decoration: none;
+        color: white;
+        padding: 5px 10px;
+        display: inline-block;
+      }
+
+      .sub-nav a.highlight {
+        background-color: #858688;
+        color: white;
+      }
+
+      .sub-nav a:hover {
+        text-decoration: none;
+      }
+
+      .section {
+        padding: 40px 20px 20px; /* Adjust the top padding to move the content down */
+        position: relative;
+      }
+
+      .section-label {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        margin-top: 55px; /* Add margin-top to move the text down */
+      }
+
+      .card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 15px; /* Add margin-top to move the cards down */
+      }
+
+      .card {
+        background-color: #273a4e;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .pay-button {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .paid-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #ccc;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: not-allowed;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1e2d3c;
+        z-index: -2;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Florence Bank</h1>
+    </header>
+    <nav>
+      <a href="#">Accounts</a>
+      <a href="#">Insights</a>
+      <a href="#" class="active">Move Money</a>
+      <a href="#">Membership</a>
+    </nav>
+    <nav class="sub-nav">
+      <a href="#">Activity</a>
+      <a href="#" class="highlight">Pay</a>
+    </nav>
+    <div class="section">
+      <div class="overlay"></div>
+      <div class="section-label">My Bills</div>
+      <div class="card-container">
+        <div class="card">
+          <button class="pay-button">Pay</button>
+          <p><strong>Name of Bill:</strong> Bill 1</p>
+          <p class="bill-details">
+            <strong>Amount:</strong> $100 | <strong>Send:</strong> January 1,
+            2022 | <strong>Deliver:</strong> January 5, 2022 |
+            <strong>From:</strong> Sender A
+          </p>
+        </div>
+        <div class="card">
+          <button class="paid-button" disabled>Paid</button>
+          <p><strong>Name of Bill:</strong> Bill 2</p>
+          <p class="bill-details">
+            <strong>Amount:</strong> $150 | <strong>Send:</strong> January 10,
+            2022 | <strong>Deliver:</strong> January 15, 2022 |
+            <strong>From:</strong> Sender B
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

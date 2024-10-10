@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Florence Bank - Move Money</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #007bff;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      nav {
+        background-color: #007bff;
+        text-align: center;
+        padding: 10px 20px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: inherit;
+        padding: 10px 20px;
+      }
+
+      nav a:hover {
+        text-decoration: none;
+      }
+
+      main {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+      }
+
+      .move-money-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .card {
+        background-color: #f8f9fa;
+        padding: 20px;
+        margin: 10px;
+        flex: 1;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s;
+      }
+
+      .card:hover {
+        background-color: #c0c0c0;
+      }
+
+      .card h3 {
+        margin-top: 0;
+      }
+
+      .card p {
+        color: #6c757d;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Florence Bank</h1>
+    </header>
+    <nav>
+      <a href="#">Accounts</a>
+      <a href="#">Insights</a>
+      <a href="#" class="active">Move Money</a>
+      <a href="#">Membership</a>
+    </nav>
+    <main>
+      <div class="move-money-box">
+        <div class="card">
+          <h3>View Activity</h3>
+          <p>View your recent transactions</p>
+        </div>
+        <div class="card">
+          <h3>Transfer Money</h3>
+          <p>Transfer funds between accounts</p>
+        </div>
+        <div class="card">
+          <h3>Pay a Person</h3>
+          <p>Send money to someone</p>
+        </div>
+      </div>
+      <div class="move-money-box">
+        <a href="PayBills.html" class="card">
+          <h3>Bill Pay</h3>
+          <p>Pay your bills online</p>
+        </a>
+        <div class="card">
+          <h3>Wire Transfer</h3>
+          <p>Transfer money electronically</p>
+        </div>
+        <div class="card">
+          <h3>Check Deposit</h3>
+          <p>Deposit checks into your account</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
